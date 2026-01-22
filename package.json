@@ -1,0 +1,55 @@
+{
+  "name": "orbicia-icons",
+  "version": "1.0.0",
+  "description": "React icon library for Orbicia projects.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "generate": "node scripts/generate-icons.mjs",
+    "build": "npm run generate && tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orbicia/orbicia-icons.git"
+  },
+  "keywords": [
+    "icons",
+    "react",
+    "svg",
+    "orbicia"
+  ],
+  "author": "Orbicia",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Orbicia/orbicia-icons/issues"
+  },
+  "homepage": "https://github.com/Orbicia/orbicia-icons#readme",
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "@types/react": "^19.2.9",
+    "prettier": "^3.8.1",
+    "svgo": "^4.0.0",
+    "svgr": "^1.10.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
