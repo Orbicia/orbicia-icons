@@ -1,5 +1,5 @@
 {
-  "name": "orbicia-icons",
+  "name": "@orbicia/icons",
   "version": "1.0.1",
   "description": "React icon library for Orbicia projects.",
   "main": "dist/index.cjs",
@@ -20,6 +20,9 @@
     "generate": "node scripts/generate-icons.mjs",
     "build": "npm run generate && tsup",
     "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
