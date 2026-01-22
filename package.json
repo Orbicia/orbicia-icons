@@ -1,6 +1,6 @@
 {
   "name": "orbicia-icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React icon library for Orbicia projects.",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
