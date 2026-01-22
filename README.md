@@ -7,6 +7,8 @@ React icon library for Orbicia projects.
 npm i @orbicia/icons
 ````
 
+---
+
 ## Usage
 
 ```tsx
